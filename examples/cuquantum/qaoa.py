@@ -7,7 +7,9 @@ import argparse
 
 import torch
 from torch import nn
-from torchquantum.plugin.cuquantum import *
+# from torchquantum.plugin.cuquantum import *
+from torchquantum.backend.core import *
+from torchquantum.backend.cuquantum_backend import *
 from torchquantum.operator.standard_gates import *
 
 

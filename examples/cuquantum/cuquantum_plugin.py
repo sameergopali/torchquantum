@@ -22,8 +22,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-from cuquantum import contract
-from cuquantum import CircuitToEinsum
+from cuquantum.tensornet import contract
+from cuquantum.tensornet import CircuitToEinsum
 import torchquantum as tq
 from torchquantum.plugin import op_history2qiskit
 from torchquantum.measurement import expval_joint_analytical

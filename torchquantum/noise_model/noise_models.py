@@ -28,7 +28,7 @@ import torchquantum as tq
 
 from torchpack.utils.logging import logger
 from qiskit.providers.aer.noise import NoiseModel
-from torchquantum.util import get_provider
+from torchquantum.util.qiskit_utils import get_provider
 
 
 __all__ = [

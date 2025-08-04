@@ -12,8 +12,6 @@ from torchquantum.operator.standard_gates import *
 
 
 
-
-
 class MAXCUT(nn.Module):
     def __init__(self, n_wires, input_graph, n_layers):
         super().__init__()

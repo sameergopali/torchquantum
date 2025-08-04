@@ -22,9 +22,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-# Only import qiskit plugin if qiskit is available
-try:
-    from .qiskit import *
-except ImportError:
-    # qiskit not available, skip importing qiskit plugin
-    pass
+# Non-qiskit dependent constants that can be used throughout torchquantum
+
+# Function names that are incompatible with qiskit
+QISKIT_INCOMPATIBLE_FUNC_NAMES = [
+    "rot",
+    "multirz", 
+    "crot",
+]

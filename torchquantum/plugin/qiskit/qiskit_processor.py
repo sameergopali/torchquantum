@@ -38,9 +38,11 @@ from .qiskit_plugin import (
 )
 from torchquantum.util import (
     get_expectations_from_counts,
+    get_circ_stats,
+)
+from torchquantum.util.qiskit_utils import (
     get_provider,
     get_provider_hub_group_project,
-    get_circ_stats,
 )
 from .qiskit_macros import IBMQ_NAMES
 from tqdm import tqdm
